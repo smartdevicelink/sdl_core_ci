@@ -1,0 +1,48 @@
+FROM ubuntu:18.04
+RUN apt-get update && apt-get -yq install \
+        git \
+        software-properties-common \
+        locales \
+        sudo \
+        libssl1.0.0 \
+        libusb-1.0-0 \
+        libbluetooth3 \
+        openssl \
+        liblua5.2-0 \
+        psmisc \
+        sqlite3 \
+        libqt5websockets5 \
+        net-tools \
+        iproute2 \
+        openssh-server \
+        libexpat1-dev \
+        libssl-doc- libusb-1.0-doc- manpages- manpages-dev- \
+        autotools-dev- binutils- build-essential- bzip2- cpp- cpp-5- dpkg-dev- fakeroot- \
+        qttranslations5-l10n- xdg-user-dirs- xml-core- dbus-
+RUN add-apt-repository --yes ppa:openjdk-r/ppa && \
+    apt-get -qq update && \
+    apt-get install -yq default-jre
+RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8 && chmod u+s /sbin/ifconfig /sbin/ip && mkdir /home/developer
+ENV LC_ALL en_US.UTF-8
+RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd \
+        && mkdir -p /var/run/sshd \
+        && adduser --quiet jenkins && echo "jenkins:jenkins" | chpasswd \
+        && sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+RUN cd /opt && wget -O cmake-3.11.0-rc3-Linux-x86_64.tar.gz https://cmake.org/files/v3.11/cmake-3.11.0-rc3-Linux-x86_64.tar.gz --no-check-certificate && \
+    tar -xvf cmake-3.11.0-rc3-Linux-x86_64.tar.gz && \
+    rm -f cmake-3.11.0-rc3-Linux-x86_64.tar.gz && \
+    ln -s /opt/cmake-3.11.0-rc3-Linux-x86_64/bin/* /usr/local/bin
+# add docker in docker to this image for remote atf implementation
+RUN apt-get update && \
+        apt-get -yq install apt-transport-https ca-certificates curl gnupg2 software-properties-common && \
+        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+        add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
+        apt-get update && \
+        apt-get -yq install docker-ce && \
+        rm -rf /var/cache/apt/archives && \
+        rm -rf /var/lib/apt/lists/*
+RUN echo "mount -t tmpfs tmpfs /home/jenkins" > /entrypoint.sh
+RUN echo "/usr/sbin/sshd -D" >> /entrypoint.sh
+RUN apt-get update && apt-get install make gcc g++ libqt5websockets5 libqt5websockets5-dev lua5.2 liblua5.2-dev libxml2-dev lua-lpeg-dev openssl libssl1.0-dev -yq
+EXPOSE 22
+CMD ["/entrypoint.sh"]
