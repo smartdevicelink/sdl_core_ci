@@ -3,7 +3,6 @@ Repository for housing continuous integration related scripts and files for SDL 
 
 https://opensdl-jenkins.prjdmz.luxoft.com/
 
-# Introduction:
 Currently, we are using Jenkins server for the Continuous Integration process of our project.
 It is mainly used for the following functionality: 
 
