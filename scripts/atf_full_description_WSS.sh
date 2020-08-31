@@ -26,7 +26,7 @@ seconds2time ()
 ####################################################
 
 export ATF_BRANCH=`curl -kfs ${ATF_BUILD_URL}api/json | jq .actions[" "].lastBuiltRevision.branch[0].name | grep -v null | cut -c9-15`
-export ATF_COMMIT=`curl -kfs ${ATF_BUILD_URL}lastBuild/api/json | jq .actions[" "].lastBuiltRevision.SHA1 | grep -v null | cut -c2-9`
+export ATF_COMMIT=`curl -kfs ${ATF_BUILD_URL}api/json | jq .actions[" "].lastBuiltRevision.SHA1 | grep -v null | cut -c2-9`
 
 ulimit -c unlimited;
 
