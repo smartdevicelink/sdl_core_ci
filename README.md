@@ -106,12 +106,12 @@ Required input values for feeature job:
  - Feature test set (optional)
  - Additional info : evoluiton proposal, links to issues, etc ...
  
- After job execution will be created a view with the following checks:
-  - 1. SDL build with unit tests on 3 policy flows (triggers: push, nightly)
-  - 2. SDL build without unit tests on 3 policy flows (triggers: push, nightly)
-  - 3. Smoke tests on 3 policy flows (triggers: build jobs without unit tests)
-  - 4. Feature tests on 3 policy flows (triggers: build jobs without unit tests)
-  - 5. Regression tests on 3 policy flows (triggers: build jobs without unit tests)
+After job execution will be created a view with the following checks:
+ 1. SDL build with unit tests on 3 policy flows (triggers: push, nightly)
+ 2. SDL build without unit tests on 3 policy flows (triggers: push, nightly)
+ 3. Smoke tests on 3 policy flows (triggers: build jobs without unit tests)
+ 4. Feature tests on 3 policy flows (triggers: build jobs without unit tests)
+ 5. Regression tests on 3 policy flows (triggers: build jobs without unit tests)
 
 ## Special requests
 
