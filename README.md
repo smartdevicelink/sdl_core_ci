@@ -113,6 +113,11 @@ Required input values for feeature job:
   - 4. Feature tests on 3 policy flows (triggers: build jobs without unit tests)
   - 5. Regression tests on 3 policy flows (triggers: build jobs without unit tests)
 
+## Special requests
+
+In case of special requiest (not ordinaary builds for special feature, restart certain jobs, etc, ...) please contact any of following persons:
+ - [Yarik Mamykin](https://github.com/YarikMamykin) : akutsan@luxoft.com
+ - [Alexander Kutsan](https://github.com/LuxoftAKutsan) : YMamykin@luxoft.com
 
 [check style bage]: https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_Checkstyle%2F&label=check%20style
 
