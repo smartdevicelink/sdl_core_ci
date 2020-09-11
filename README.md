@@ -205,5 +205,5 @@ https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz
 [HTTP atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_H/
 [HTTP atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_H%2F&label=http%20policy%20tests
 
-[unit test coverage]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_weekly/job/Develop_SDL_Checkstyle/
+[unit test coverage]: https://opensdl-jenkins.prjdmz.luxoft.com/job/develop_weekly_coverage/
 [unit test coverage bage]: https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2Fdevelop_weekly_coverage%2F&label=unit%20test%20coverage
