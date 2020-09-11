@@ -99,7 +99,7 @@ Check full regression specific for remote control on each policy flow.
 A test set executed for SDL build in 3 policy flows: 
  - [![bage][PROPRIETARY atf bage RC]][PROPRIETARY atf RC]
  - [![bage][EXTERNAL PROPRIETARY atf bage RC]][EXTERNAL PROPRIETARY atf RC]
- - [![bage][HTTP atf RC]][HTTP atf RC]
+ - [![bage][HTTP atf bage RC]][HTTP atf RC]
 
 #### Various features regression
 Contains all ATF scripts for all featured available in the development.
@@ -203,22 +203,22 @@ https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz
 https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20http
 
 [PROPRIETARY atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_P/
-[PROPRIETARY atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20policy%20tests
+[PROPRIETARY atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20policy
 
 [EXTERNAL PROPRIETARY atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_E/
-[EXTERNAL PROPRIETARY atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_E%2F&label=external%20PROPRIETARY%20policy%20tests
+[EXTERNAL PROPRIETARY atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20policy
 
 [HTTP atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_H/
-[HTTP atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_H%2F&label=http%20policy%20tests
+[HTTP atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_H%2F&label=HTTP%20atf%20policy
 
 [PROPRIETARY atf RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_P/
-[PROPRIETARY atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20RC%20tests
+[PROPRIETARY atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20RC
 
 [EXTERNAL PROPRIETARY atf RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_E/
-[EXTERNAL PROPRIETARY atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_E%2F&label=external%20PROPRIETARY%20RC%20tests
+[EXTERNAL PROPRIETARY atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20RC
 
 [HTTP atf RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_H/
-[HTTP atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_H%2F&label=http%20RC%20tests
+[HTTP atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_H%2F&label=HTTP%20atf%20RC
 
 [unit test coverage]: https://opensdl-jenkins.prjdmz.luxoft.com/job/develop_weekly_coverage/
 [unit test coverage bage]: https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2Fdevelop_weekly_coverage%2F&label=unit%20test%20coverage
