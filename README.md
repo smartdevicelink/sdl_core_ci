@@ -5,7 +5,7 @@ SDL continuously checks code:
  - static code analysis
  - build and unit tests
  - smoke automated tests
- - regression tests
+ - regression automated tests
 
 Job artifacts contains build results, ATF reports, SDL logs,  etc ...
 
