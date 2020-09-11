@@ -100,7 +100,7 @@ Full weekly status is available on https://opensdl-jenkins.prjdmz.luxoft.com/vie
 For each feature before merging to develop should be created a list of jobs similar to develop to check that feature will no introduce a regression. 
 There is a special job in CI [Feature job create]() that will create a list of jobs and a separate view for the feature.
 
-Required input values for feeature job: 
+Required input values for feature job: 
  - Feture name (will be used for view title)
  - sdl_core feature branch and repository (master by default) 
  - sdl_atf feature branch and repository (master by default)
