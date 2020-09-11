@@ -3,9 +3,9 @@
 SDL continuously checks code:
  - check style
  - static code analysis
- - Build and unit tests
- - Smoke automates tests
- - Regression tests
+ - build and unit tests
+ - smoke automates tests
+ - regression tests
 
 Job artifacts contains build results, ATF reports, SDL logs,  etc ...
 
@@ -106,7 +106,7 @@ Required input values for feature job:
  - sdl_atf feature branch and repository (master by default)
  - sdl_atf_test_scripts feature branch and repository. (master by default)
  - Feature test set (optional)
- - Additional info : evoluiton proposal, links to issues, etc ...
+ - Additional info : evolution proposal, links to issues, etc ...
  
 After job execution will be created a view with the following checks:
  1. SDL build with unit tests on 3 policy flows (triggers: push, nightly)
