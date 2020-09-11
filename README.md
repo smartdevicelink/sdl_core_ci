@@ -17,7 +17,7 @@ Only TCP transport is checked on 3 policy flows.
 
 [Develop](https://github.com/smartdevicelink/sdl_core/tree/develop) push and nightly builds are available in [view](https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/) :
 
- - [Code style check](https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_Checkstyle/) : Use [check_style.sh](https://github.com/smartdevicelink/sdl_core/blob/master/tools/infrastructure/check_style.sh) to check sdl_core code for compilence to Google coding style. ![bage][check style bage] 
+ - [Code style check](https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_Checkstyle/) : Use [check_style.sh](https://github.com/smartdevicelink/sdl_core/blob/master/tools/infrastructure/check_style.sh) to check sdl_core code for compliance to Google coding style. ![bage][check style bage] 
  - Develop builds without unit tests in 3 policy flows: 
    - [![bage][develop proprietary no ut bage]][develop proprietary no ut] 
    - [![bage][develop external proprietary no ut bage]][develop external proprietary no ut] 
