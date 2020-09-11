@@ -7,7 +7,7 @@ SDL continuously checks code:
  - smoke automated tests
  - regression automated tests
 
-Job artifacts contains build results, ATF reports, SDL logs,  etc ...
+Job artifacts contain build results, ATF reports, SDL logs,  etc ...
 
 CI strategy described in details in [proposal](https://github.com/smartdevicelink/sdl_evolution/blob/master/proposals/0277-Continuous-Integration-And-Testing.md)
 
