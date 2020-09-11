@@ -101,7 +101,7 @@ For each feature before merging to develop should be created a list of jobs simi
 There is a special job in CI [Feature job create]() that will create a list of jobs and a separate view for the feature.
 
 Required input values for feature job: 
- - Feture name (will be used for view title)
+ - Feature name (will be used for view title)
  - sdl_core feature branch and repository (master by default) 
  - sdl_atf feature branch and repository (master by default)
  - sdl_atf_test_scripts deature branch and repository. (master by default)
