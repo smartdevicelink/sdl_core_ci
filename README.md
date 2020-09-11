@@ -104,7 +104,7 @@ Required input values for feature job:
  - Feature name (will be used for view title)
  - sdl_core feature branch and repository (master by default) 
  - sdl_atf feature branch and repository (master by default)
- - sdl_atf_test_scripts deature branch and repository. (master by default)
+ - sdl_atf_test_scripts feature branch and repository. (master by default)
  - Feature test set (optional)
  - Additional info : evoluiton proposal, links to issues, etc ...
  
