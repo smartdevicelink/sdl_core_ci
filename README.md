@@ -132,7 +132,7 @@ Full weekly status is available on https://opensdl-jenkins.prjdmz.luxoft.com/vie
 
 For each feature before merging to develop should be created a list of jobs similar to develop to check that feature will not introduce a regression. 
 There is a special job on CI [Feature job create](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Create_Jobs_for_Feature/) that will create a list of jobs and a separate view for the feature.
-When feature is delivered and no checks for it needed appropriate jobs on CI can be deleted with [Feature job delete](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Delete_Jobs_for_Feature/)
+When feature is delivered and no checks for it is needed appropriate jobs on CI can be deleted with [Feature job delete](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Delete_Jobs_for_Feature/)
 In case feature check should be canceled immediately there is [Feature job cancel](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Cancel_Jobs_for_Feature/) that allows to stop all running jobs (e.g. builds, atf test runs) relative to feature.
 
 Required input values for feature job: 
