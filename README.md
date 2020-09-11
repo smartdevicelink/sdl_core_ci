@@ -171,7 +171,7 @@ https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz
 
 [develop EXTERNAL PROPRIETARY no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_E/
 [develop EXTERNAL PROPRIETARY no ut bage]:
-https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_E%2F&label=external%20PROPRIETARY%20build%20%20no%20UT
+https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_E%2F&label=EXTERNAL%20PROPRIETARY%20build%20%20no%20UT
 
 [develop HTTP no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_H
 [develop HTTP no ut bage]:
@@ -184,11 +184,11 @@ https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz
 
 [develop EXTERNAL PROPRIETARY ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_E/
 [develop EXTERNAL PROPRIETARY ut bage]:
-https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_E%2F&label=external%20PROPRIETARY%20unit%20tests
+https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_E%2F&label=EXTERNAL%20PROPRIETARY%20unit%20tests
 
 [develop HTTP ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_H
 [develop HTTP ut bage]:
-https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_H&label=http%20unit%20tests&style=plastic
+https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_H&label=HTTP%20unit%20tests&style=plastic
 
 [develop automated smoke PROPRIETARY]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Smoke_P
 [develop automated smoke PROPRIETARY bage]:
@@ -196,11 +196,11 @@ https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz
 
 [develop automated smoke EXTERNAL PROPRIETARY]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Smoke_E
 [develop automated smoke EXTERNAL PROPRIETARY bage]:
-https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20external%20PROPRIETARY
+https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20EXTERNAL%20PROPRIETARY
 
 [develop automated smoke HTTP]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Smoke_H
 [develop automated smoke HTTP bage]:
-https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20http
+https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20HTTP
 
 [PROPRIETARY atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_P/
 [PROPRIETARY atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20policy
