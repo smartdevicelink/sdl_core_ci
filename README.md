@@ -97,9 +97,9 @@ A test set executed for SDL build in 3 policy flows:
 Check full regression specific for remote control on each policy flow.
 
 A test set executed for SDL build in 3 policy flows: 
- - [![bage][PROPRIETARY atf policy bage RC]][PROPRIETARY atf RC]
- - [![bage][EXTERNAL PROPRIETARY atf policy bage RC]][EXTERNAL PROPRIETARY atf RC]
- - [![bage][HTTP atf policy RC]][HTTP atf RC]
+ - [![bage][PROPRIETARY atf bage RC]][PROPRIETARY atf RC]
+ - [![bage][EXTERNAL PROPRIETARY atf bage RC]][EXTERNAL PROPRIETARY atf RC]
+ - [![bage][HTTP atf RC]][HTTP atf RC]
 
 #### Various features regression
 Contains all ATF scripts for all featured available in the development.
