@@ -52,13 +52,13 @@ Only TCP transport is checked on 3 policy flows.
 
  - [Code style check](https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_Checkstyle/) : Use [check_style.sh](https://github.com/smartdevicelink/sdl_core/blob/master/tools/infrastructure/check_style.sh) to check sdl_core code for compliance to Google coding style. ![badge][check style badge] 
  - Develop builds without unit tests in 3 policy flows: 
-   - [![badge][develop PROPRIETARY no ut badge]][develop PROPRIETARY no ut] 
-   - [![badge][develop EXTERNAL PROPRIETARY no ut badge]][develop EXTERNAL PROPRIETARY no ut] 
-   - [![badge][develop HTTP no ut badge]][develop HTTP no ut] 
+   - [![badge][develop PROPRIETARY no UT badge]][develop PROPRIETARY no UT] 
+   - [![badge][develop EXTERNAL PROPRIETARY no UT badge]][develop EXTERNAL PROPRIETARY no UT] 
+   - [![badge][develop HTTP no UT badge]][develop HTTP no UT] 
  - Develop builds and unit unit tests run: 
-   - [ ![badge][develop PROPRIETARY ut badge]][develop PROPRIETARY ut]
-   - [![badge][develop EXTERNAL PROPRIETARY ut badge]][develop EXTERNAL PROPRIETARY ut] 
-   - [![badge][develop HTTP ut badge]][develop HTTP ut] 
+   - [ ![badge][develop PROPRIETARY UT badge]][develop PROPRIETARY UT]
+   - [![badge][develop EXTERNAL PROPRIETARY UT badge]][develop EXTERNAL PROPRIETARY UT] 
+   - [![badge][develop HTTP UT badge]][develop HTTP UT] 
  - [Develop_=RUN_PUSH_AND_NIGHTLY=](
 https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop%20push%20and%20nightly/job/Develop_=RUN_PUSH_AND_NIGHTLY=/) job is trigger for listed develop build jobs
 
@@ -165,29 +165,29 @@ In case of special request (not ordinary builds for special feature, restart cer
 
 [check style badge]: https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_Checkstyle%2F&label=check%20style
 
-[develop PROPRIETARY no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_P/
-[develop PROPRIETARY no ut badge]:
+[develop PROPRIETARY no UT]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_P/
+[develop PROPRIETARY no UT badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_P%2F&label=PROPRIETARY%20build%20%20no%20UT
 
-[develop EXTERNAL PROPRIETARY no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_E/
-[develop EXTERNAL PROPRIETARY no ut badge]:
+[develop EXTERNAL PROPRIETARY no UT]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_E/
+[develop EXTERNAL PROPRIETARY no UT badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_E%2F&label=EXTERNAL%20PROPRIETARY%20build%20%20no%20UT
 
-[develop HTTP no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_H
-[develop HTTP no ut badge]:
+[develop HTTP no UT]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_H
+[develop HTTP no UT badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_H&label=HTTP%20build%20%20no%20UT
 
 
-[develop PROPRIETARY ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_P/
-[develop PROPRIETARY ut badge]:
+[develop PROPRIETARY UT]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_P/
+[develop PROPRIETARY UT badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_P%2F&label=PROPRIETARY%20unit%20tests
 
-[develop EXTERNAL PROPRIETARY ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_E/
-[develop EXTERNAL PROPRIETARY ut badge]:
+[develop EXTERNAL PROPRIETARY UT]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_E/
+[develop EXTERNAL PROPRIETARY UT badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_E%2F&label=EXTERNAL%20PROPRIETARY%20unit%20tests
 
-[develop HTTP ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_H
-[develop HTTP ut badge]:
+[develop HTTP UT]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_H
+[develop HTTP UT badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_H&label=HTTP%20unit%20tests&style=plastic
 
 [develop automated smoke PROPRIETARY]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Smoke_P
