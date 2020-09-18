@@ -50,15 +50,15 @@ Only TCP transport is checked on 3 policy flows.
 
 [Develop](https://github.com/smartdevicelink/sdl_core/tree/develop) push and nightly builds are available in [view](https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/) :
 
- - [Code style check](https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_Checkstyle/) : Use [check_style.sh](https://github.com/smartdevicelink/sdl_core/blob/master/tools/infrastructure/check_style.sh) to check sdl_core code for compliance to Google coding style. ![bage][check style bage] 
+ - [Code style check](https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_Checkstyle/) : Use [check_style.sh](https://github.com/smartdevicelink/sdl_core/blob/master/tools/infrastructure/check_style.sh) to check sdl_core code for compliance to Google coding style. ![badge][check style badge] 
  - Develop builds without unit tests in 3 policy flows: 
-   - [![bage][develop PROPRIETARY no ut bage]][develop PROPRIETARY no ut] 
-   - [![bage][develop EXTERNAL PROPRIETARY no ut bage]][develop EXTERNAL PROPRIETARY no ut] 
-   - [![bage][develop HTTP no ut bage]][develop HTTP no ut] 
+   - [![badge][develop PROPRIETARY no ut badge]][develop PROPRIETARY no ut] 
+   - [![badge][develop EXTERNAL PROPRIETARY no ut badge]][develop EXTERNAL PROPRIETARY no ut] 
+   - [![badge][develop HTTP no ut badge]][develop HTTP no ut] 
  - Develop builds and unit unit tests run: 
-   - [ ![bage][develop PROPRIETARY ut bage]][develop PROPRIETARY ut]
-   - [![bage][develop EXTERNAL PROPRIETARY ut bage]][develop EXTERNAL PROPRIETARY ut] 
-   - [![bage][develop HTTP ut bage]][develop HTTP ut] 
+   - [ ![badge][develop PROPRIETARY ut badge]][develop PROPRIETARY ut]
+   - [![badge][develop EXTERNAL PROPRIETARY ut badge]][develop EXTERNAL PROPRIETARY ut] 
+   - [![badge][develop HTTP ut badge]][develop HTTP ut] 
  - [Develop_=RUN_PUSH_AND_NIGHTLY=](
 https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop%20push%20and%20nightly/job/Develop_=RUN_PUSH_AND_NIGHTLY=/) job is trigger for listed develop build jobs
 
@@ -76,9 +76,9 @@ Contains basic checks from [smoke_tests.txt](https://github.com/smartdevicelink/
 
 A test set executed for SDL build in 3 policy flows: 
 
- - [![bage][develop automated smoke PROPRIETARY bage]][develop automated smoke PROPRIETARY]
- - [![bage][develop automated smoke EXTERNAL PROPRIETARY bage]][develop automated smoke EXTERNAL PROPRIETARY]
- - [![bage][develop automated smoke HTTP bage]][develop automated smoke HTTP]
+ - [![badge][develop automated smoke PROPRIETARY badge]][develop automated smoke PROPRIETARY]
+ - [![badge][develop automated smoke EXTERNAL PROPRIETARY badge]][develop automated smoke EXTERNAL PROPRIETARY]
+ - [![badge][develop automated smoke HTTP badge]][develop automated smoke HTTP]
  
 
 ### Automated regression
@@ -88,18 +88,18 @@ A test set executed for SDL build in 3 policy flows:
 Check full regression specific for each policy flow.
 
 A test set executed for SDL build in 3 policy flows: 
- - [![bage][PROPRIETARY ATF policy bage]][PROPRIETARY ATF policy ]
- - [![bage][EXTERNAL PROPRIETARY ATF policy bage]][EXTERNAL PROPRIETARY ATF policy ]
- - [![bage][HTTP ATF policy bage]][HTTP ATF policy]
+ - [![badge][PROPRIETARY ATF policy badge]][PROPRIETARY ATF policy ]
+ - [![badge][EXTERNAL PROPRIETARY ATF policy badge]][EXTERNAL PROPRIETARY ATF policy ]
+ - [![badge][HTTP ATF policy badge]][HTTP ATF policy]
 
 #### Automated RC regression 
 
 Check full regression specific for remote control on each policy flow.
 
 A test set executed for SDL build in 3 policy flows: 
- - [![bage][PROPRIETARY ATF bage RC]][PROPRIETARY ATF RC]
- - [![bage][EXTERNAL PROPRIETARY ATF bage RC]][EXTERNAL PROPRIETARY ATF RC]
- - [![bage][HTTP ATF bage RC]][HTTP ATF RC]
+ - [![badge][PROPRIETARY ATF badge RC]][PROPRIETARY ATF RC]
+ - [![badge][EXTERNAL PROPRIETARY ATF badge RC]][EXTERNAL PROPRIETARY ATF RC]
+ - [![badge][HTTP ATF badge RC]][HTTP ATF RC]
 
 #### Various features regression
 Contains all ATF scripts for all featured available in the development.
@@ -122,7 +122,7 @@ List of develop jobs executed [weekly](https://opensdl-jenkins.prjdmz.luxoft.com
 
 ### Unit tests coverage 
 
-Unit tests coverage check weekly in the job: [![bage][unit test coverage bage]][unit test coverage]
+Unit tests coverage check weekly in the job: [![badge][unit test coverage badge]][unit test coverage]
 
 ### Full ATF regression
 
@@ -163,62 +163,62 @@ In case of special request (not ordinary builds for special feature, restart cer
  - [Yarik Mamykin](https://github.com/YarikMamykin) : YMamykin@luxoft.com
  - [Alexander Kutsan](https://github.com/LuxoftAKutsan) : akutsan@luxoft.com
 
-[check style bage]: https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_Checkstyle%2F&label=check%20style
+[check style badge]: https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_Checkstyle%2F&label=check%20style
 
 [develop PROPRIETARY no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_P/
-[develop PROPRIETARY no ut bage]:
+[develop PROPRIETARY no ut badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_P%2F&label=PROPRIETARY%20build%20%20no%20UT
 
 [develop EXTERNAL PROPRIETARY no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_E/
-[develop EXTERNAL PROPRIETARY no ut bage]:
+[develop EXTERNAL PROPRIETARY no ut badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_E%2F&label=EXTERNAL%20PROPRIETARY%20build%20%20no%20UT
 
 [develop HTTP no ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_NoUT_H
-[develop HTTP no ut bage]:
+[develop HTTP no ut badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_NoUT_H&label=HTTP%20build%20%20no%20UT
 
 
 [develop PROPRIETARY ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_P/
-[develop PROPRIETARY ut bage]:
+[develop PROPRIETARY ut badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_P%2F&label=PROPRIETARY%20unit%20tests
 
 [develop EXTERNAL PROPRIETARY ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_E/
-[develop EXTERNAL PROPRIETARY ut bage]:
+[develop EXTERNAL PROPRIETARY ut badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_E%2F&label=EXTERNAL%20PROPRIETARY%20unit%20tests
 
 [develop HTTP ut]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_UT_H
-[develop HTTP ut bage]:
+[develop HTTP ut badge]:
 https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_SDL_UT_H&label=HTTP%20unit%20tests&style=plastic
 
 [develop automated smoke PROPRIETARY]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Smoke_P
-[develop automated smoke PROPRIETARY bage]:
+[develop automated smoke PROPRIETARY badge]:
 https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_P&label=automated%20smoke%20PROPRIETARY
 
 [develop automated smoke EXTERNAL PROPRIETARY]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Smoke_E
-[develop automated smoke EXTERNAL PROPRIETARY bage]:
+[develop automated smoke EXTERNAL PROPRIETARY badge]:
 https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20EXTERNAL%20PROPRIETARY
 
 [develop automated smoke HTTP]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Smoke_H
-[develop automated smoke HTTP bage]:
+[develop automated smoke HTTP badge]:
 https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20HTTP
 
 [PROPRIETARY ATF policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_P/
-[PROPRIETARY ATF policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20policy
+[PROPRIETARY ATF policy badge]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20policy
 
 [EXTERNAL PROPRIETARY ATF policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_E/
-[EXTERNAL PROPRIETARY ATF policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20policy
+[EXTERNAL PROPRIETARY ATF policy badge]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20policy
 
 [HTTP ATF policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_H/
-[HTTP ATF policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_H%2F&label=HTTP%20atf%20policy
+[HTTP ATF policy badge]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_H%2F&label=HTTP%20atf%20policy
 
 [PROPRIETARY ATF RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_P/
-[PROPRIETARY ATF bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20RC
+[PROPRIETARY ATF badge RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20RC
 
 [EXTERNAL PROPRIETARY ATF RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_E/
-[EXTERNAL PROPRIETARY ATF bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20RC
+[EXTERNAL PROPRIETARY ATF badge RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20RC
 
 [HTTP ATF RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_H/
-[HTTP ATF bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_H%2F&label=HTTP%20atf%20RC
+[HTTP ATF badge RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_H%2F&label=HTTP%20atf%20RC
 
 [unit test coverage]: https://opensdl-jenkins.prjdmz.luxoft.com/job/develop_weekly_coverage/
-[unit test coverage bage]: https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2Fdevelop_weekly_coverage%2F&label=unit%20test%20coverage
+[unit test coverage badge]: https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2Fdevelop_weekly_coverage%2F&label=unit%20test%20coverage
