@@ -48,7 +48,7 @@ CI strategy described in details in [proposal](https://github.com/smartdevicelin
 
 Only TCP transport is checked on 3 policy flows. 
 
-[Develop](https://github.com/smartdevicelink/sdl_core/tree/develop) push and nightly builds are available in [view](https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/) :
+[Develop](https://github.com/smartdevicelink/sdl_core/tree/develop) push and nightly builds are available in the [develop push and nightly status view](https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/) :
 
  - [Code style check](https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_SDL_Checkstyle/) : Use [check_style.sh](https://github.com/smartdevicelink/sdl_core/blob/master/tools/infrastructure/check_style.sh) to check sdl_core code for compliance to Google coding style. ![badge][check style badge] 
  - Develop builds without unit tests in 3 policy flows: 
@@ -63,7 +63,7 @@ Only TCP transport is checked on 3 policy flows.
 https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop%20push%20and%20nightly/job/Develop_=RUN_PUSH_AND_NIGHTLY=/) job is trigger for listed develop build jobs
 
 
-Develop branch push and nightly automated scripts checks available in [view](https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/) :
+Develop branch push and nightly automated scripts checks available in the [develop push and nightly status view](https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/) :
 
 ### Automated scripts 
 
