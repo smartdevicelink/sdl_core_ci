@@ -88,18 +88,18 @@ A test set executed for SDL build in 3 policy flows:
 Check full regression specific for each policy flow.
 
 A test set executed for SDL build in 3 policy flows: 
- - [![bage][PROPRIETARY atf policy bage]][PROPRIETARY atf policy ]
- - [![bage][EXTERNAL PROPRIETARY atf policy bage]][EXTERNAL PROPRIETARY atf policy ]
- - [![bage][HTTP atf policy bage]][HTTP atf policy]
+ - [![bage][PROPRIETARY ATF policy bage]][PROPRIETARY ATF policy ]
+ - [![bage][EXTERNAL PROPRIETARY ATF policy bage]][EXTERNAL PROPRIETARY ATF policy ]
+ - [![bage][HTTP ATF policy bage]][HTTP ATF policy]
 
 #### Automated RC regression 
 
 Check full regression specific for remote control on each policy flow.
 
 A test set executed for SDL build in 3 policy flows: 
- - [![bage][PROPRIETARY atf bage RC]][PROPRIETARY atf RC]
- - [![bage][EXTERNAL PROPRIETARY atf bage RC]][EXTERNAL PROPRIETARY atf RC]
- - [![bage][HTTP atf bage RC]][HTTP atf RC]
+ - [![bage][PROPRIETARY ATF bage RC]][PROPRIETARY ATF RC]
+ - [![bage][EXTERNAL PROPRIETARY ATF bage RC]][EXTERNAL PROPRIETARY ATF RC]
+ - [![bage][HTTP ATF bage RC]][HTTP ATF RC]
 
 #### Various features regression
 Contains all ATF scripts for all featured available in the development.
@@ -140,7 +140,7 @@ Full weekly status is available on https://opensdl-jenkins.prjdmz.luxoft.com/vie
 For each feature before merging to develop should be created a list of jobs similar to develop to check that feature will not introduce a regression. 
 There is a special job on CI [Feature job create](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Create_Jobs_for_Feature/) that will create a list of jobs and a separate view for the feature.
 When feature is delivered and no checks for it is needed appropriate jobs on CI can be deleted with [Feature job delete](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Delete_Jobs_for_Feature/)
-In case feature check should be canceled immediately there is [Feature job cancel](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Cancel_Jobs_for_Feature/) that allows to stop all running jobs (e.g. builds, atf test runs) relative to feature.
+In case feature check should be canceled immediately there is [Feature job cancel](https://opensdl-jenkins.prjdmz.luxoft.com/view/Jenkins_Utils/job/Jenkins_Utils_Cancel_Jobs_for_Feature/) that allows to stop all running jobs (e.g. builds, ATF test runs) relative to feature.
 
 Required input values for feature job: 
  - Feature name (will be used for view title)
@@ -202,23 +202,23 @@ https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz
 [develop automated smoke HTTP bage]:
 https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Smoke_E&label=automated%20smoke%20HTTP
 
-[PROPRIETARY atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_P/
-[PROPRIETARY atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20policy
+[PROPRIETARY ATF policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_P/
+[PROPRIETARY ATF policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20policy
 
-[EXTERNAL PROPRIETARY atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_E/
-[EXTERNAL PROPRIETARY atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20policy
+[EXTERNAL PROPRIETARY ATF policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_E/
+[EXTERNAL PROPRIETARY ATF policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20policy
 
-[HTTP atf policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_H/
-[HTTP atf policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_H%2F&label=HTTP%20atf%20policy
+[HTTP ATF policy]: https://opensdl-jenkins.prjdmz.luxoft.com/view/all/job/Develop_TCP_ATF_Policies_H/
+[HTTP ATF policy bage]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_H%2F&label=HTTP%20atf%20policy
 
-[PROPRIETARY atf RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_P/
-[PROPRIETARY atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20RC
+[PROPRIETARY ATF RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_P/
+[PROPRIETARY ATF bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_Policies_P%2F&label=PROPRIETARY%20atf%20RC
 
-[EXTERNAL PROPRIETARY atf RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_E/
-[EXTERNAL PROPRIETARY atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20RC
+[EXTERNAL PROPRIETARY ATF RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_E/
+[EXTERNAL PROPRIETARY ATF bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_E%2F&label=EXTERNAL%20PROPRIETARY%20atf%20RC
 
-[HTTP atf RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_H/
-[HTTP atf bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_H%2F&label=HTTP%20atf%20RC
+[HTTP ATF RC]: https://opensdl-jenkins.prjdmz.luxoft.com/view/Develop_push_and_nightly_status/job/Develop_TCP_ATF_RC_H/
+[HTTP ATF bage RC]:https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2FDevelop_TCP_ATF_RC_H%2F&label=HTTP%20atf%20RC
 
 [unit test coverage]: https://opensdl-jenkins.prjdmz.luxoft.com/job/develop_weekly_coverage/
 [unit test coverage bage]: https://img.shields.io/jenkins/tests?jobUrl=https%3A%2F%2Fopensdl-jenkins.prjdmz.luxoft.com%2Fview%2Fall%2Fjob%2Fdevelop_weekly_coverage%2F&label=unit%20test%20coverage
