@@ -116,7 +116,7 @@ PR checks :
  - build with unit tests
  - [smoke_tests.txt](https://github.com/smartdevicelink/sdl_atf_test_scripts/blob/master/test_sets/smoke_tests.txt) trigger by build with unit tests.
 
-CI triggers PR checks for any PR targeted into `develop` and `release/7.0.0` branches if `CI` label is assigned to this PR.
+CI triggers PR checks for any PR if `CI` label is assigned to this PR.
 
 For the first build `Rebuild required` comment needs to be placed into PR.
 However further builds will be triggered automatically by any push into source branch.
