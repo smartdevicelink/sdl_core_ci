@@ -2073,6 +2073,7 @@
 ./test_scripts/API/MainMenuUpdating/001_dynamic_update_capabilities_success.lua
 ./test_scripts/API/MainMenuUpdating/003_on_update_sub_menu_success.lua
 ./test_scripts/API/MainMenuUpdating/002_on_update_file_success.lua
+./test_scripts/API/System/OnSystemRequest/001_OnSystemRequest_send_binaryData_for_any_requestType.lua
 ./test_scripts/Resumption/Handling_errors_from_HMI/001_successful_resumption_SUCCESS_resultCode.lua
 ./test_scripts/Resumption/Handling_errors_from_HMI/002_successful_resumption_other_successful_result_codes.lua
 ./test_scripts/Resumption/Handling_errors_from_HMI/003_resume_one_rpc_with_error_result_code_unexpected_disconnect.lua
