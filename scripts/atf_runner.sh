@@ -92,49 +92,12 @@ function create_html_report {
   log "</style>"
   log "</head>"
 
-  log "<table><thead><tr><th>ID</th><th>Test Result</th><th>Test Name</th></tr></thead>"
-
-  local num_of_rows=$(wc -l $_atf_report_file | awk '{print $1}')
-  let num_of_rows=$num_of_rows-9
-  local rows=$(sed -n "4,${num_of_rows}p" < $_atf_report_file)
-  local total=0
-  local total_passed=0
-  local total_failed=0
-  local total_skipped=0
-  local total_aborted=0
-  local total_unknown=0
-  while read -r row; do
-    local script_num=$(echo $row | awk '{print $1}' | sed 's/://')
-    local script_status=$(echo $row | awk '{print $2}')
-    local script_name=$(echo $row | awk '{print $3}')
-    local color
-    let "total+=1"
-    case $script_status in
-      PASSED)
-        color="YellowGreen"
-        let "total_passed+=1"
-      ;;
-      FAILED)
-        color="red"
-        let "total_failed+=1"
-      ;;
-      SKIPPED)
-        color="yellow"
-        let "total_skipped+=1"
-      ;;
-      ABORTED)
-        color="orange"
-        let "total_aborted+=1"
-      ;;
-      *)
-        color="LightSteelBlue"
-        let "total_unknown+=1"
-      ;;
-    esac
-    log "<tr> <td><a href='$script_num/Console.txt'>$script_num</a></td> <td bgcolor='$color'>$script_status</td> <td>$script_name</td> </tr>"
-  done <<< "$rows"
-
-  log "</table><br>"
+  local total=$(grep "^TOTAL" $_atf_report_file | awk '{print $2}')
+  local total_passed=$(grep "^PASSED" $_atf_report_file | awk '{print $2}')
+  local total_failed=$(grep "^FAILED" $_atf_report_file | awk '{print $2}')
+  local total_skipped=$(grep "^SKIPPED" $_atf_report_file | awk '{print $2}')
+  local total_aborted=$(grep "^ABORTED" $_atf_report_file | awk '{print $2}')
+  local total_unknown=$(($total-$total_passed-$total_failed-$total_skipped-$total_aborted))
 
   log "<table>"
   log "<tr> <th>Status</th> <th>Count</th> </tr>"
@@ -144,14 +107,46 @@ function create_html_report {
   log "<tr> <td bgcolor='yellow'>SKIPPED</td> <td>$total_skipped</td> </tr>"
   log "<tr> <td bgcolor='LightSteelBlue'>UNKNOWN</td> <td>$total_unknown</td> </tr>"
   log "<tr style='font-weight:bold'> <td>TOTAL</td> <td>$total</td> </tr>"
-  log "</table><br>"
+  log "</table>"
 
   log "<p>Complete report: <a href='$dir.tar.gz'>$dir.tar.gz</a></p>"
 
   log "<p>"$(grep "Exec" $_atf_report_file)"</p>"
 
-  log "</html>"
+  log "<table><thead><tr><th>ID</th><th>Test Result</th><th>Test Name</th></tr></thead>"
 
+  local num_of_rows=$(wc -l $_atf_report_file | awk '{print $1}')
+  let num_of_rows=$num_of_rows-9
+  local rows=$(sed -n "4,${num_of_rows}p" < $_atf_report_file)
+  while read -r row; do
+    local script_num=$(echo $row | awk '{print $1}' | sed 's/://')
+    local script_status=$(echo $row | awk '{print $2}')
+    local script_name=$(echo $row | awk '{print $3}')
+    local color
+    let "total+=1"
+    case $script_status in
+      PASSED)
+        color="YellowGreen"
+      ;;
+      FAILED)
+        color="red"
+      ;;
+      SKIPPED)
+        color="yellow"
+      ;;
+      ABORTED)
+        color="orange"
+      ;;
+      *)
+        color="LightSteelBlue"
+      ;;
+    esac
+    log "<tr> <td><a href='$script_num/Console.txt'>$script_num</a></td> <td bgcolor='$color'>$script_status</td> <td>$script_name</td> </tr>"
+  done <<< "$rows"
+
+  log "</table><br>"
+
+  log "</html>"
 }
 
 create_html_report
