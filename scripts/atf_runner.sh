@@ -99,6 +99,7 @@ function create_html_report {
   local total_aborted=$(grep "^ABORTED" $_atf_report_file | awk '{print $2}')
   local total_unknown=$(($total-$total_passed-$total_failed-$total_skipped-$total_aborted))
 
+  log "<p style='font-weight:bold;text-decoration:underline;'>=== Summary: ===</p>"
   log "<table>"
   log "<tr> <th>Status</th> <th>Count</th> </tr>"
   log "<tr> <td bgcolor='YellowGreen'>PASSED</td> <td>$total_passed</td> </tr>"
@@ -113,7 +114,8 @@ function create_html_report {
 
   log "<p>"$(grep "Exec" $_atf_report_file)"</p>"
 
-  log "<table><thead><tr><th>ID</th><th>Test Result</th><th>Test Name</th></tr></thead>"
+  log "<p style='font-weight:bold;text-decoration: underline;'>=== Failed / Aborted / Unknown: ===</p>"
+  log "<table><thead><tr><th>ID</th><th>Result</th><th>Name</th></tr></thead>"
 
   local num_of_rows=$(wc -l $_atf_report_file | awk '{print $1}')
   let num_of_rows=$num_of_rows-9
@@ -123,7 +125,6 @@ function create_html_report {
     local script_status=$(echo $row | awk '{print $2}')
     local script_name=$(echo $row | awk '{print $3}')
     local color
-    let "total+=1"
     case $script_status in
       PASSED)
         color="YellowGreen"
@@ -141,7 +142,9 @@ function create_html_report {
         color="LightSteelBlue"
       ;;
     esac
-    log "<tr> <td><a href='$script_num/Console.txt'>$script_num</a></td> <td bgcolor='$color'>$script_status</td> <td>$script_name</td> </tr>"
+    if [ $script_status != "PASSED" ] && [ $script_status != "SKIPPED" ]; then
+      log "<tr> <td><a href='$script_num/Console.txt'>$script_num</a></td> <td bgcolor='$color'>$script_status</td> <td>$script_name</td> </tr>"
+    fi
   done <<< "$rows"
 
   log "</table><br>"
