@@ -2201,3 +2201,10 @@
 ./test_scripts/Protocol/NACKReason/016_SetVideoConfig_no_response_Video_Service_NACK.lua
 ./test_scripts/Protocol/NACKReason/017_SetVideoConfig_error_response_Video_Service_NACK.lua
 ./test_scripts/Protocol/NACKReason/018_SetVideoConfig_error_response_with_rejected_params_Video_Service_NACK.lua
+./test_scripts/Defects/7_1/1583_PerformInteraction_UNSUPPORTED_and_ABORTED_response_success.lua
+./test_scripts/Defects/7_1/1596_1_VRPerformInteraction_UNSUPPORTED_RESOURCE_success.lua
+./test_scripts/Defects/7_1/1596_2_UIPerformInteraction_UNSUPPORTED_RESOURCE_success.lua
+./test_scripts/Defects/7_1/1597_1_Alert_Unsupported_Speech_Type.lua
+./test_scripts/Defects/7_1/1597_2_SubtleAlert_Unsupported_Speech_Type.lua
+./test_scripts/Defects/7_1/1597_3_AlertManeuver_Unsupported_Speech_Type.lua
+./test_scripts/Defects/7_1/1597_4_PerformAudioPassThru_Unsupported_Speech_Type.lua
