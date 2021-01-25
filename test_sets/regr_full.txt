@@ -346,8 +346,6 @@
 ./test_scripts/API/SubMenuIcon/002_menuIcon_invalid_type.lua
 ./test_scripts/API/SubMenuIcon/003_menuIcon_selected_not_existing_file.lua
 ./test_scripts/API/SubMenuIcon/004_menuIcon_is_absent.lua
-./test_scripts/API/VehicleData/AudioSource/001_Success_deviceStatus_primaryAudioSource.lua
-./test_scripts/API/VehicleData/AudioSource/002_Success_flow_deviceStatus_primaryAudioSource.lua
 ./test_scripts/API/VehicleData/DOP/001_GVD_max_value_SUCCESS.lua
 ./test_scripts/API/VehicleData/DOP/002_GVD_beyond_max_value_GENERIC_ERROR.lua
 ./test_scripts/API/VehicleData/DOP/003_GVD_missing_one_parameter_SUCCESS.lua
@@ -358,8 +356,6 @@
 ./test_scripts/API/VehicleData/DOP/008_GVD_missing_all_parameters_SUCCESS.lua
 ./test_scripts/API/VehicleData/DOP/009_OVD_all_parameters_SUCCESS.lua
 ./test_scripts/API/VehicleData/DOP/010_OVD_missing_all_parameters_SUCCESS.lua
-./test_scripts/API/VehicleData/GearStatus/001_GetVehicleData_with_one_param_in_gearStatus_structure.lua
-./test_scripts/API/VehicleData/GearStatus/002_OnVehicleData_with_only_one_param_in_gearStatus_structure.lua
 ./test_scripts/API/VehicleData/GetVehicleData/001_GetVD_Success_flow.lua
 ./test_scripts/API/VehicleData/GetVehicleData/002_GetVD_disallowed.lua
 ./test_scripts/API/VehicleData/GetVehicleData/003_GetVD_disallowed_after_PTU.lua
@@ -383,10 +379,6 @@
 ./test_scripts/API/VehicleData/OnVehicleData/004_OnVD_with_invalid_data.lua
 ./test_scripts/API/VehicleData/OnVehicleData/005_OnVD_App_is_not_subscribed.lua
 ./test_scripts/API/VehicleData/OnVehicleData/006_OnVD_mandatory_parameters.lua
-./test_scripts/API/VehicleData/RefactorFuelInformation/001_GetVehicleData_with_one_param_in_fuelRange_structure.lua
-./test_scripts/API/VehicleData/RefactorFuelInformation/002_OnVehicleData_with_only_one_param_in_fuelRange_structure.lua
-./test_scripts/API/VehicleData/StabilityControlsStatus/001_GetVehicleData_with_one_param_in_stabilityControlsStatus_structure.lua
-./test_scripts/API/VehicleData/StabilityControlsStatus/002_OnVehicleData_with_only_one_param_in_stabilityControlsStatus_structure.lua
 ./test_scripts/API/VehicleData/SubscribeVehicleData/001_SubscribeVD_Success.lua
 ./test_scripts/API/VehicleData/SubscribeVehicleData/002_SubscribeVD_disallowed.lua
 ./test_scripts/API/VehicleData/SubscribeVehicleData/003_SubscribeVD_disallowed_after_PTU.lua
@@ -419,8 +411,6 @@
 ./test_scripts/API/VehicleData/VehicleDataVersioning/010_VD_parameter_in_API_app_version_more_then_parameter_version.lua
 ./test_scripts/API/VehicleData/VehicleDataVersioning/011_VD_parameter_in_API_app_version_equal_parameter_version.lua
 ./test_scripts/API/VehicleData/VehicleDataVersioning/012_VD_parameter_in_API_app_version_less_then_parameter_version.lua
-./test_scripts/API/VehicleData/WindowStatus/001_GetVehicleData_boundary_values_windowStatus_structure.lua
-./test_scripts/API/VehicleData/WindowStatus/002_OnVehicleData_boundary_values_windowStatus_structure.lua
 ./test_scripts/AppServices/AppServiceActivation/001_mobile_deactivate_success.lua
 ./test_scripts/AppServices/AppServiceActivation/002_hmi_deactivate_success.lua
 ./test_scripts/AppServices/AppServiceActivation/003_two_apps_activate_success.lua
