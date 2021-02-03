@@ -107,7 +107,8 @@ function create_html_report {
   local total_failed=$(grep "^FAILED" $_atf_report_file | awk '{print $2}')
   local total_skipped=$(grep "^SKIPPED" $_atf_report_file | awk '{print $2}')
   local total_aborted=$(grep "^ABORTED" $_atf_report_file | awk '{print $2}')
-  local total_unknown=$(($total-$total_passed-$total_failed-$total_skipped-$total_aborted))
+  local total_missing=$(grep "^MISSING" $_atf_report_file | awk '{print $2}')
+  local total_unknown=$(($total-$total_passed-$total_failed-$total_skipped-$total_aborted-$total_missing))
 
   log "<p style='font-weight:bold;text-decoration:underline;'>=== Summary: ===</p>"
   log "<table>"
@@ -116,7 +117,8 @@ function create_html_report {
   log "<tr> <td bgcolor='red'>FAILED</td> <td>$total_failed</td> </tr>"
   log "<tr> <td bgcolor='orange'>ABORTED</td> <td>$total_aborted</td> </tr>"
   log "<tr> <td bgcolor='yellow'>SKIPPED</td> <td>$total_skipped</td> </tr>"
-  log "<tr> <td bgcolor='LightSteelBlue'>UNKNOWN</td> <td>$total_unknown</td> </tr>"
+  log "<tr> <td bgcolor='LightSteelBlue'>MISSING</td> <td>$total_missing</td> </tr>"
+  log "<tr> <td bgcolor='PaleVioletRed'>UNKNOWN</td> <td>$total_unknown</td> </tr>"
   log "<tr style='font-weight:bold'> <td>TOTAL</td> <td>$total</td> </tr>"
   log "</table>"
 
@@ -128,7 +130,7 @@ function create_html_report {
   log "<table><thead><tr><th>ID</th><th>Result</th><th>Name</th></tr></thead>"
 
   local num_of_rows=$(wc -l $_atf_report_file | awk '{print $1}')
-  let num_of_rows=$num_of_rows-9
+  let num_of_rows=$num_of_rows-10
   local rows=$(sed -n "4,${num_of_rows}p" < $_atf_report_file)
   while read -r row; do
     local script_num=$(echo $row | awk '{print $1}' | sed 's/://')
@@ -148,8 +150,11 @@ function create_html_report {
       ABORTED)
         color="orange"
       ;;
-      *)
+      MISSING)
         color="LightSteelBlue"
+      ;;
+      *)
+        color="PaleVioletRed"
       ;;
     esac
     if [ $script_status != "PASSED" ] && [ $script_status != "SKIPPED" ]; then

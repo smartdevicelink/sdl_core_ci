@@ -100,6 +100,7 @@ function create_html_report {
   local total_failed=0
   local total_skipped=0
   local total_aborted=0
+  local total_missing=0
   local total_unknown=0
   while read -r row; do
     local script_num=$(echo $row | awk '{print $1}' | sed 's/://')
@@ -124,8 +125,12 @@ function create_html_report {
         color="orange"
         let "total_aborted+=1"
       ;;
-      *)
+      MISSING)
         color="LightSteelBlue"
+        let "total_missing+=1"
+      ;;
+      *)
+        color="PaleVioletRed"
         let "total_unknown+=1"
       ;;
     esac
@@ -140,7 +145,8 @@ function create_html_report {
   log "<tr> <td bgcolor='red'>FAILED</td> <td>$total_failed</td> </tr>"
   log "<tr> <td bgcolor='orange'>ABORTED</td> <td>$total_aborted</td> </tr>"
   log "<tr> <td bgcolor='yellow'>SKIPPED</td> <td>$total_skipped</td> </tr>"
-  log "<tr> <td bgcolor='LightSteelBlue'>UNKNOWN</td> <td>$total_unknown</td> </tr>"
+  log "<tr> <td bgcolor='LightSteelBlue'>MISSING</td> <td>$total_missing</td> </tr>"
+  log "<tr> <td bgcolor='PaleVioletRed'>UNKNOWN</td> <td>$total_unknown</td> </tr>"
   log "<tr style='font-weight:bold'> <td>TOTAL</td> <td>$total</td> </tr>"
   log "</table><br>"
 
