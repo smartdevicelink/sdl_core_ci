@@ -54,6 +54,16 @@ else
     TEST_TARGET=$(basename $TEST_TARGET)
   fi
 fi
+if [ $TEST_TARGET = "regr_full.txt" ]; then
+  echo "Create Regression test set"
+  mv $TEST_TARGET ./test_sets
+  cd ./test_sets
+  wget -q https://raw.githubusercontent.com/LuxoftSDL/sdl_core_ci/develop/scripts/build_regr_full.sh
+  chmod +x build_regr_full.sh
+  ./build_regr_full.sh $TEST_TARGET regr_full_generated.txt || exit 1
+  TEST_TARGET=./test_sets/regr_full_generated.txt
+  cd ..
+fi
 echo "TEST_TARGET:" $TEST_TARGET
 
 echo "=== Start parallel workers"
