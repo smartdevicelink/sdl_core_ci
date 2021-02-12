@@ -95,3 +95,4 @@ API/ShowAppMenu_RPC.txt
 API/SubtleAlert_RPC.txt
 API/vehicle_data.txt
 oem_exclusive.txt
+keyboard_enhancements.txt
