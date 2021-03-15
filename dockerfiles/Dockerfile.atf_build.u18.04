@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -yq install \
         locales \
         sudo \
         libssl1.0.0 \
-        libusb-1.0-0 \
+        libssl-dev \
         libbluetooth3 \
         openssl \
         liblua5.2-0 \
@@ -43,6 +43,6 @@ RUN apt-get update && \
         rm -rf /var/lib/apt/lists/*
 RUN echo "mount -t tmpfs tmpfs /home/jenkins" > /entrypoint.sh
 RUN echo "/usr/sbin/sshd -D" >> /entrypoint.sh
-RUN apt-get update && apt-get install make gcc g++ libqt5websockets5 libqt5websockets5-dev lua5.2 liblua5.2-dev libxml2-dev lua-lpeg-dev openssl libssl1.0-dev -yq
+RUN apt-get update && apt-get install make gcc g++ libqt5websockets5 libqt5websockets5-dev lua5.2 liblua5.2-dev libxml2-dev lua-lpeg-dev openssl libssl-dev -yq
 EXPOSE 22
 CMD ["/entrypoint.sh"]
