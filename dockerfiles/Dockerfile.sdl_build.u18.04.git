@@ -1,0 +1,24 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get install -yq \
+    software-properties-common \
+    sudo \
+    git \
+    wget \
+    curl \
+    openssh-server \
+    clang-format-6.0 \
+    libssl-dev libudev-dev
+
+RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd
+RUN mkdir -p /var/run/sshd
+RUN adduser --quiet jenkins && echo "jenkins:jenkins" | chpasswd && \
+    sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+RUN apt-get install -y openjdk-8-jre && mkdir -p /home/jenkins/.ssh/
+COPY .ssh/* /home/jenkins/.ssh/
+RUN eval "$(ssh-agent)" && ssh-add /home/jenkins/.ssh/id_rsa*
+RUN ssh-keyscan github.ford.com | tee github-key-temp | ssh-keygen -lf -
+RUN cat github-key-temp >> /etc/ssh/ssh_known_hosts
+RUN chown -R jenkins:jenkins /home/jenkins/.ssh
+EXPOSE 22
+CMD ["/usr/sbin/sshd", "-D"]
