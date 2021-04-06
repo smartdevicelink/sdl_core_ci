@@ -1,0 +1,52 @@
+FROM ubuntu:20.04
+
+RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+
+RUN apt-get update && apt-get -q -y install locales sudo wget git apt-utils
+
+RUN locale-gen en_US.UTF-8
+RUN update-locale LANG=en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+
+# DIND
+RUN apt-get update \
+  && apt-get -yq install apt-transport-https ca-certificates curl gnupg2 software-properties-common \
+  && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - \
+  && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
+  && apt-get update \
+  && apt-get -yq install docker-ce \
+  && rm -rf /var/cache/apt/archives \
+  && rm -rf /var/lib/apt/lists/*
+
+# ATF run dependencies
+RUN apt-get update && apt-get -q -y install net-tools iproute2 rsync screen gdb
+
+# ATF build dependencies
+RUN apt-get update && apt-get -q -y install qt5-default libqt5websockets5-dev liblua5.2-dev libxml2-dev lua5.2
+
+# SDL build dependencies
+RUN apt-get update && apt-get -q -y install cmake libssl-dev libusb-1.0-0-dev \
+  libudev-dev libsqlite3-dev libbluetooth-dev clang-format-6.0
+
+RUN apt-get update && apt-get -q -y install python3-pip python3-setuptools
+
+RUN python3 -m pip install xmlschema
+
+# Set permissions
+RUN chmod u+s /sbin/ifconfig /sbin/ip
+
+# Java
+RUN add-apt-repository --yes ppa:openjdk-r/ppa \
+  && apt-get -qq update \
+  && apt-get install -y default-jre
+
+# Jenkins
+RUN apt-get update && apt-get -q -y install openssh-server
+RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd
+RUN mkdir -p /var/run/sshd
+RUN adduser --quiet jenkins && echo "jenkins:jenkins" | chpasswd && \
+  sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D"]
