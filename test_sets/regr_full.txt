@@ -2,6 +2,7 @@ Defects/Defects_releases_4_x_and_5_x.txt
 Defects/Defects_release_6_1.txt
 Defects/Defects_release_7_0.txt
 Defects/Defects_release_7_1.txt
+Defects/Defects_release_7_2.txt
 hmi_level_resumption.txt
 gps_shift_support.txt
 rpc_message_protection.txt
