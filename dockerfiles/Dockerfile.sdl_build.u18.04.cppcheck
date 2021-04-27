@@ -14,11 +14,9 @@ RUN apt-get update && apt-get install -yq \
     openssh-server \
     python \
     clang-format-6.0 \
-    libssl-dev libudev-dev
+    libssl-dev libudev-dev \
+    openjdk-8-jre
 
-RUN add-apt-repository --yes ppa:openjdk-r/ppa && \
-    apt-get -qq update && \
-    apt-get install -y default-jre
 RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd
 RUN mkdir -p /var/run/sshd
 RUN adduser --quiet jenkins && echo "jenkins:jenkins" | chpasswd && \
