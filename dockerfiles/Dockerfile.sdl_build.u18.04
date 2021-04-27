@@ -40,6 +40,7 @@ RUN apt update && apt install -yq \
 RUN apt-get update && apt-get -yq install \
         software-properties-common \
         openssl \
+        lua5.2 \
         liblua5.2-0 \
         liblua5.2-dev \
         lua-lpeg-dev \

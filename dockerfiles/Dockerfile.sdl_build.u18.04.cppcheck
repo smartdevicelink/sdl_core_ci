@@ -20,21 +20,7 @@ RUN add-apt-repository --yes ppa:openjdk-r/ppa && \
     apt-get -qq update && \
     apt-get install -y default-jre
 
-#RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd
-#RUN mkdir -p /var/run/sshd
-#RUN adduser --quiet jenkins && echo "jenkins:jenkins" | chpasswd && \
-#    sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-#RUN apt-get -yq update && \
-#    apt install -yq gdb sqlite locales clang-format-3.6\
-#    libbluetooth3 libbluetooth-dev libavahi-client-dev bluez-tools \
-#    sqlite3 libsqlite3-dev libexpat1-dev qt5-default libqt5websockets5-dev libusb-1.0-0-dev \
-#    lcov genhtml html2text bc xmlstarlet xsltproc dos2unix
 RUN apt install cppcheck -y
-
-#RUN locale-gen en_US.UTF-8
-#RUN update-locale LANG=en_US.UTF-8
-#ENV LC_ALL en_US.UTF-8
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
