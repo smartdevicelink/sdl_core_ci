@@ -1,0 +1,52 @@
+FROM ubuntu:18.04
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt install -yq \
+    automake \
+    ccache \
+    clang-format-6.0 \
+    g++ \
+    gdb \
+    lcov \
+    html2text \
+    cppcheck \
+    apt-transport-https \
+    gnupg2 \
+    cmake \
+    wget \
+    sudo \
+    git \
+    vim \
+    gnupg \
+    locales \
+    libexpat1-dev \
+    libssl-dev \
+    libbluetooth3 \
+    libbluetooth-dev \
+    libudev-dev \
+    libusb-1.0 \
+    bluez-tools \
+    sqlite3 \
+    libsqlite3-dev \
+    build-essential \
+    python-dev \
+    autotools-dev \
+    libicu-dev \
+    libbz2-dev \
+    make \
+    python3-pip \
+    python3-setuptools \
+    software-properties-common \
+    openssh-server \
+    && python3 -m pip install xmlschema
+RUN add-apt-repository --yes ppa:openjdk-r/ppa && \
+        apt-get -qq update && \
+        apt-get install -y openjdk-8-jdk openjdk-8-jre automake
+RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd
+RUN mkdir -p /var/run/sshd
+RUN adduser --quiet jenkins && echo "jenkins:jenkins" | chpasswd && \
+    sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+RUN locale-gen en_US.UTF-8
+RUN update-locale LANG=en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+EXPOSE 22
+CMD ["/usr/sbin/sshd", "-D"]

@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
@@ -31,11 +31,6 @@ RUN apt-get update && apt-get -q -y install cmake libssl-dev libusb-1.0-0-dev \
 RUN apt-get update && apt-get -q -y install python3-pip python3-setuptools
 
 RUN python3 -m pip install xmlschema
-
-RUN cd /opt && wget -O cmake-3.11.0-rc3-Linux-x86_64.tar.gz https://cmake.org/files/v3.11/cmake-3.11.0-rc3-Linux-x86_64.tar.gz --no-check-certificate && \
-    tar -xvf cmake-3.11.0-rc3-Linux-x86_64.tar.gz && \
-    rm -f cmake-3.11.0-rc3-Linux-x86_64.tar.gz && \
-    ln -s /opt/cmake-3.11.0-rc3-Linux-x86_64/bin/* /usr/local/bin
 
 # Set permissions
 RUN chmod u+s /sbin/ifconfig /sbin/ip
