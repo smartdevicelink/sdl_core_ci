@@ -3,7 +3,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install -yq \
     automake \
     ccache \
-    clang-format-6.0 \
+    clang-format-8 \
     g++ \
     gdb \
     lcov \
