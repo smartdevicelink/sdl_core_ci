@@ -26,7 +26,7 @@ RUN apt-get update && apt-get -q -y install qt5-default libqt5websockets5-dev li
 
 # SDL build dependencies
 RUN apt-get update && apt-get -q -y install cmake libssl-dev libusb-1.0-0-dev \
-  libudev-dev libsqlite3-dev libbluetooth-dev clang-format-6.0
+  libudev-dev libsqlite3-dev libbluetooth-dev clang-format-8
 
 RUN apt-get update && apt-get -q -y install python3-pip python3-setuptools
 

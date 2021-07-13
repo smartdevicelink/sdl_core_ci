@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -yq \
     wget \
     curl \
     openssh-server \
-    clang-format-6.0 \
+    clang-format-8 \
     libssl-dev libudev-dev
 
 RUN sed -i 's|session required pam_loginuid.so|session optional pam_loginuid.so|g' /etc/pam.d/sshd
