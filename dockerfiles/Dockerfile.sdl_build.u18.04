@@ -4,6 +4,7 @@ RUN apt update && apt install -yq \
     automake \
     ccache \
     clang-format-6.0 \
+    clang-format-8 \
     g++ \
     gdb \
     lcov \
@@ -19,7 +20,7 @@ RUN apt update && apt install -yq \
     gnupg \
     locales \
     libexpat1-dev \
-    libssl1.0-dev \
+    libssl-dev \
     libbluetooth3 \
     libbluetooth-dev \
     libudev-dev \
